@@ -1,0 +1,20 @@
+.articleSection{
+  color:var(--color-suptext);
+  max-width:270px;
+}
+
+.paragraph{
+  font-size: 18px;
+  line-height: 33px;
+  span{
+    font-size: 36px;
+    line-height: 33px;
+  }
+}
+
+.link{
+  font-size: 18px;
+  text-decoration: none;
+  color:var(--color-text);
+  font-weight: bold;
+}

@@ -1,0 +1,63 @@
+.cardSection{
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  border-radius:8px;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textOverlay{
+  position: absolute;
+  bottom:0;
+  left:0;
+  padding:30px;
+  color:var(--color-text);
+}
+
+.title{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.spanWrapper{
+  display: flex;
+  gap:27px;
+
+}
+
+.cardSpan{
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 768px)  {
+  .cardSection{
+    max-width: 647px;
+    width: 100%;
+  }
+  .title{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 375px)  {
+  .title{
+    font-size: 16px;
+    text-align: left;
+  }
+  .cardSection{
+    max-width: 305px;
+    width: 100%;
+  }
+  .image{
+    object-fit: cover;
+  }
+}

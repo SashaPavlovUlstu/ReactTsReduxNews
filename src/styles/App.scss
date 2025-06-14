@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --color-bg-light:#E5E5E5;
+  --color-bg-dark:#121221;
+  --color-text-light:#121221;
+  --color-text-dark:#949494;
+  --color-suptext-light20:#949494;
+  --color-suptext-dark:white;
+  --color-logo-light:#F8F8F8;
+  --color-logo-dark:white;
+}
+
+body[data-theme="light"] {
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
+  --color-suptext: var(--color-suptext-light20);
+  --color-logo:var(--color-logo-light);
+}
+
+body[data-theme="dark"] {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-suptext: var(--color-suptext-dark);
+  --color-logo:var(--color-logo-dark);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

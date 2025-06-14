@@ -1,0 +1,31 @@
+.newsTitle{
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.newsGrid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap:30px;
+}
+
+@media screen and (max-width: 768px)  {
+  .newsTitle{
+    font-size: 24px;
+  }
+  .newsGrid{
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+  }
+}
+
+@media screen and (max-width: 375px)  {
+  .newsTitle{
+    font-size: 24px;
+  }
+  .newsGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap:20px;
+  }
+}
